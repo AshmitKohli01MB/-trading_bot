@@ -62,7 +62,7 @@ def trade(
         )
 
         # ── Print Success ─────────────────────────
-        console.rule("[bold green] Order Placed Successfully ✅")
+        console.rule("[bold green] Order Placed Successfully ")
 
         # Build response table
         table = Table(
@@ -97,14 +97,14 @@ def trade(
 
     # ── Handle Validation Errors ──────────────────
     except ValueError as ve:
-        console.rule("[bold red] Validation Error ❌")
+        console.rule("[bold red] Validation Error ")
         rprint(f"[red]{ve}[/red]")
         logger.warning(f"Validation error: {ve}")
         raise typer.Exit(code=1)
 
     # ── Handle All Other Errors ───────────────────
     except Exception as e:
-        console.rule("[bold red] Order Failed ❌")
+        console.rule("[bold red] Order Failed ")
         rprint(f"[red]Error: {e}[/red]")
         logger.exception("Order placement failed.")
         raise typer.Exit(code=1)

@@ -1,0 +1,286 @@
+2026-04-22 10:37:00 | INFO | validators | Validation passed for: BTCUSDT BUY MARKET qty=0.001
+2026-04-22 10:37:00 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 10:37:02 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 10:37:02 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 10:37:04 | ERROR | client | Binance API Error | Code: 401 | Message: API-key format invalid.
+2026-04-22 10:37:04 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-04-22 10:37:15 | INFO | validators | Validation passed for: BTCUSDT SELL MARKET qty=0.001
+2026-04-22 10:37:15 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 10:37:17 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 10:37:17 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 10:37:18 | ERROR | client | Binance API Error | Code: 401 | Message: API-key format invalid.
+2026-04-22 10:37:18 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-2014): API-key format invalid.
+2026-04-22 11:01:01 | INFO | validators | Validation passed for: BTCUSDT SELL MARKET qty=0.001
+2026-04-22 11:01:01 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 11:01:02 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:01:02 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 11:01:02 | INFO | client | Order response received: {'orderId': 13060233820, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ7982f684fc6cdd9f9d5040', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776835862394}
+2026-04-22 11:01:02 | INFO | cli | Order placed successfully. OrderId: 13060233820
+2026-04-22 11:01:37 | INFO | validators | Validation passed for: BTCUSDT SELL MARKET qty=0.001
+2026-04-22 11:01:37 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 11:01:37 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:01:37 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.001}
+2026-04-22 11:01:38 | INFO | client | Order response received: {'orderId': 13060235710, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9017e1096122ff12e054e1', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776835898145}
+2026-04-22 11:01:38 | INFO | cli | Order placed successfully. OrderId: 13060235710
+2026-04-22 11:02:13 | INFO | validators | Validation passed for: BTCUSDT BUY LIMIT qty=0.001 price=93000.0
+2026-04-22 11:02:13 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 93000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:02:14 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:02:14 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 93000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:02:14 | ERROR | client | Binance API Error | Code: 400 | Message: Limit price can't be higher than 82072.19.
+2026-04-22 11:02:14 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4016): Limit price can't be higher than 82072.19.
+2026-04-22 11:02:43 | INFO | validators | Validation passed for: BTCUSDT BUY LIMIT qty=0.001 price=7000.0
+2026-04-22 11:02:43 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 7000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:02:44 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:02:44 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 7000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:02:44 | ERROR | client | Binance API Error | Code: 400 | Message: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-22 11:02:44 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4164): Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-22 11:03:12 | INFO | validators | Validation passed for: BTCUSDT BUY LIMIT qty=0.001 price=45.0
+2026-04-22 11:03:12 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 45.0, 'timeInForce': 'GTC'}
+2026-04-22 11:03:13 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:03:13 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 45.0, 'timeInForce': 'GTC'}
+2026-04-22 11:03:13 | ERROR | client | Binance API Error | Code: 400 | Message: Price less than min price.
+2026-04-22 11:03:13 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4013): Price less than min price.
+2026-04-22 11:04:09 | INFO | validators | Validation passed for: BTCUSDT BUY LIMIT qty=0.001 price=1000.0
+2026-04-22 11:04:09 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 1000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:04:10 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:04:10 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.001, 'price': 1000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:04:10 | ERROR | client | Binance API Error | Code: 400 | Message: Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-22 11:04:10 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4164): Order's notional must be no smaller than 50 (unless you choose reduce only).
+2026-04-22 11:05:42 | INFO | validators | Validation passed for: BTCUSDT BUY MARKET qty=0.01
+2026-04-22 11:05:42 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:05:42 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:05:42 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:05:43 | INFO | client | Order response received: {'orderId': 13060246362, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ583f9e68485d4ff28b08b2', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776836142896}
+2026-04-22 11:05:43 | INFO | cli | Order placed successfully. OrderId: 13060246362
+2026-04-22 11:06:02 | INFO | validators | Validation passed for: BTCUSDT SELL MARKET qty=0.01
+2026-04-22 11:06:02 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:06:03 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:06:03 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:06:03 | INFO | client | Order response received: {'orderId': 13060247325, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJbc30b95c82cd3a103c5f04', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776836163340}
+2026-04-22 11:06:03 | INFO | cli | Order placed successfully. OrderId: 13060247325
+2026-04-22 11:06:33 | INFO | validators | Validation passed for: BTCUSDT BUY LIMIT qty=0.01 price=93000.0
+2026-04-22 11:06:33 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 93000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:06:33 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:06:33 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 93000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:06:33 | ERROR | client | Binance API Error | Code: 400 | Message: Limit price can't be higher than 82079.29.
+2026-04-22 11:06:33 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4016): Limit price can't be higher than 82079.29.
+2026-04-22 11:07:52 | INFO | validators | Validation passed for: BTCUSDT BUY LIMIT qty=0.01 price=93000.0
+2026-04-22 11:07:52 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 93000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:07:53 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:07:53 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 93000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:07:53 | ERROR | client | Binance API Error | Code: 400 | Message: Limit price can't be higher than 82004.90.
+2026-04-22 11:07:53 | ERROR | cli | Order placement failed.
+Traceback (most recent call last):
+  File "C:\Users\kohli\trading_bot\cli.py", line 56, in trade
+    response = place_order(
+        symbol,
+    ...<3 lines>...
+        price
+    )
+  File "C:\Users\kohli\trading_bot\bot\orders.py", line 55, in place_order
+    response = client.place_order(**params)
+  File "C:\Users\kohli\trading_bot\bot\client.py", line 54, in place_order
+    response = self.client.futures_create_order(**kwargs)
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 7951, in futures_create_order
+    return self._request_futures_api("post", "order", True, data=params)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 144, in _request_futures_api
+    return self._request(method, uri, signed, force_params, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 107, in _request
+    return self._handle_response(self.response)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\kohli\trading_bot\venv\Lib\site-packages\binance\client.py", line 116, in _handle_response
+    raise BinanceAPIException(response, response.status_code, response.text)
+binance.exceptions.BinanceAPIException: APIError(code=-4016): Limit price can't be higher than 82004.90.
+2026-04-22 11:09:25 | INFO | validators | Validation passed for: BTCUSDT BUY MARKET qty=0.01
+2026-04-22 11:09:25 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:09:25 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:09:25 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:09:26 | INFO | client | Order response received: {'orderId': 13060256807, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9cb0ff88be33cc6c80c0cf', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776836366208}
+2026-04-22 11:09:26 | INFO | cli | Order placed successfully. OrderId: 13060256807
+2026-04-22 11:09:38 | INFO | validators | Validation passed for: BTCUSDT SELL MARKET qty=0.01
+2026-04-22 11:09:38 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:09:38 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:09:38 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:09:38 | INFO | client | Order response received: {'orderId': 13060257461, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9f7cfe030435cff86649b2', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776836378705}
+2026-04-22 11:09:38 | INFO | cli | Order placed successfully. OrderId: 13060257461
+2026-04-22 11:09:53 | INFO | validators | Validation passed for: BTCUSDT BUY LIMIT qty=0.01 price=75000.0
+2026-04-22 11:09:53 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 75000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:09:54 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:09:54 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'LIMIT', 'quantity': 0.01, 'price': 75000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:09:54 | INFO | client | Order response received: {'orderId': 13060258140, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ9683018d6f9996d3b1c355', 'price': '75000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776836394243}
+2026-04-22 11:09:54 | INFO | cli | Order placed successfully. OrderId: 13060258140
+2026-04-22 11:10:08 | INFO | validators | Validation passed for: BTCUSDT SELL LIMIT qty=0.01 price=80000.0
+2026-04-22 11:10:08 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 80000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:10:09 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:10:09 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'price': 80000.0, 'timeInForce': 'GTC'}
+2026-04-22 11:10:09 | INFO | client | Order response received: {'orderId': 13060258934, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ8d63c1594624b2ac0ae888', 'price': '80000.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776836409539}
+2026-04-22 11:10:09 | INFO | cli | Order placed successfully. OrderId: 13060258934
+2026-04-22 11:10:33 | INFO | validators | Validation passed for: BTCUSDT BUY MARKET qty=0.01
+2026-04-22 11:10:33 | INFO | orders | Final order parameters: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:10:33 | INFO | client | Binance Futures Testnet client initialized successfully.
+2026-04-22 11:10:33 | INFO | client | Sending order request: {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.01}
+2026-04-22 11:10:34 | INFO | client | Order response received: {'orderId': 13060260272, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'x-Cb7ytekJ95bffc8452a91019c9d392', 'price': '0.00', 'avgPrice': '0.00', 'origQty': '0.0100', 'executedQty': '0.0000', 'cumQty': '0.0000', 'cumQuote': '0.000000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1776836434132}
+2026-04-22 11:10:34 | INFO | cli | Order placed successfully. OrderId: 13060260272
